@@ -43,10 +43,16 @@ void table_output(int a, int b)
 
 int main()
 {
-	printf("Enter two numbers: ");
-	int a, b, c;
-	while( (c=scanf("%d, %d", &a, &b)) != EOF ){
-		table_output(a, b);
+	printf("Enter two numbers (without punctuation): ");
+	int a, b;
+	char buf[32];
+	while ( fgets(buf, sizeof(buf), stdin ) != NULL ){
+		if(sscanf(buf, "%d %d", &a, &b) == 2)
+			table_output(a, b);
+		else if (sscanf(buf, "%d, %d", &a, &b) == 2)
+			table_output(a, b);
+		else
+			printf("Incorrect input, try again: ");
 	}
 	return 0;
 }
