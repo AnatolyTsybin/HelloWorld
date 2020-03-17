@@ -1,2 +1,2 @@
 # HelloWorld
-Something looks like (not) code
+My personal collection of bicycles, reinvented wheels, mammoth and dinosaur coprolites, et cetera.
