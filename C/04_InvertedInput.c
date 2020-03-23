@@ -20,7 +20,7 @@ struct singly_linked_list *list_input()
 			current = malloc(sizeof(struct singly_linked_list));
 			current->element = c;
 			current->next = tmp;
-		} else if()
+		} else
 			printf("Incorrect input, try again: \n");
 	}
 
