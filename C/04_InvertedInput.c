@@ -37,6 +37,8 @@ void list_output(struct singly_linked_list *current)
 		current = current->next;
 		free(tmp);
 	}
+
+	putchar(10);
 }
 
 int main()
@@ -48,7 +50,6 @@ int main()
 
 	printf("Entered numbers in inverted order is:\n");
 	list_output(first);
-	putchar(10);
 
 	return 0;
 }
