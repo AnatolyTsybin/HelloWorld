@@ -20,7 +20,7 @@ struct singly_linked_list *list_input()
 			current = malloc(sizeof(struct singly_linked_list));
 			current->element = c;
 			current->next = tmp;
-		} else
+		} else if()
 			printf("Incorrect input, try again: \n");
 	}
 
@@ -37,6 +37,8 @@ void list_output(struct singly_linked_list *current)
 		current = current->next;
 		free(tmp);
 	}
+
+	putchar(10);
 }
 
 int main()
@@ -48,7 +50,6 @@ int main()
 
 	printf("Entered numbers in inverted order is:\n");
 	list_output(first);
-	putchar(10);
 
 	return 0;
 }
