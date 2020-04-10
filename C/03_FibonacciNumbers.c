@@ -18,5 +18,8 @@ int main()
 		printf("%d Fibonacci number is %d.\n", n, fibonacci_number(n));
 		printf("Enter next number or Ctrl+D to exit: ");
 	}
+
+	putchar(10);
+
 	return 0;
 }
