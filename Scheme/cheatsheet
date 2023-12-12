@@ -1,0 +1,28 @@
+Some Scheme internal procedures
+
+(= m n)         Tests whether the exact numbers m and n are equal
+(< m n)         Tests whether m is less than n
+(<= m n)        Tests whether m is less than or equal to n
+(> m n)         Tests whether m is greater than n
+(>= m n)        Tests whether m is greater than or equal to n
+(abs n)         Gives the absolute value of n
+    Examples: (abs 3) => 3 and (abs -3) => 3
+(ceiling n)     Gives the smallest integer (inexact) which is >= n
+    Examples: (ceiling 4.2) => 5.0 and (ceiling -4.2) => -4.0
+(floor n)       Gives the largest integer (inexact) which is =< n
+    Examples: (floor 4.2) => 4.0 and (floor -4.2) => -5.0
+(round n)       Rounds n to the nearest integer (inexact).
+                If n is exactly halfway between two integers,
+                it rounds it the nearest even integer.
+(truncate n)    Gives the integer (inexact) obtained by chopping off
+                the decimal part of n
+(expt n k)      Raises n to the power k
+(sqrt n)        The square root of n, n >= 0
+(max n...), (min n...)  The maximum and minimum of n..., respectively
+(exp n), (log n)    The exponential of n and logarithm of n to the base e
+(sin n), (cos n)    The trigonometric sine and cosine of n radians
+(asin n), (acos n)  The arc sine and arc cosine of n
+(tan n), (atan n)   The tangent and arc tangent of n
+(quotient n k)      The quotient of n divided by k
+(remainder n k)     The remainder of n divided by k with the sign of the dividend
+(modulo n k)        The remainder of n divided by k with the sign of the divisor
